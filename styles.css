@@ -1,25 +1,28 @@
-body {
-  background-color: #ffffff;
-  height: 100vh;
-  height: 100vw;
-}
-
-.container {
+.error { 
+  /* I can omit these properties and include them in the mixin */
+  /* width: 99%;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2em;
   font-family: Verdana;
-  font-size: 0.8rem;
+  border-radius: 3px;
+  margin: 10px; */  
+  background-color: rgb(0, 255, 170);
+  color: white;
+  border: 1px solid lightslategray;
 }
 
-.page-wrapper {
-  padding: 21px;
+.success { 
+  /* width: 99%;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2em;
+  font-family: Verdana;
+  border-radius: 3px;
+  margin: 10px; */
+  background-color: rgb(17, 0, 255);
+  color: mintcream;
+  border: 1px solid lightsalmon;
 }
-.page-wrapper .featured {
-  color: DarkGreen;
-}
-.page-wrapper .page-content {
-  background-color: DarkGreen;
-  padding: 42px;
-  color: #ffffff;
-}
-.page-wrapper .page-content .container {
-  font-family: courier;
-}/*# sourceMappingURL=styles.css.map */

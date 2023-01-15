@@ -1,22 +1,50 @@
-@mixin notifications($background-color, $color, $border) {
-  width: 99%;
-  height: 35px;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 1.2em;
+// @mixin notifications($background-color, $color, $border) {
+//   width: 99%;
+//   height: 35px;
+//   text-align: center;
+//   padding-top: 10px;
+//   font-size: 1.2em;
+//   font-family: Verdana;
+//   border-radius: 3px;
+//   margin: 10px;
+//   background-color: $background-color;
+//   color: $color;
+//   border: $border;
+// }
+
+// .error {
+//   @include notifications($background-color: rgb(0, 255, 170), $color: white, $border: 1px solid white);
+// }
+
+
+// .success {
+//   @include notifications($background-color: rgb(17, 0, 255,), $color: mintcream, $border: 1px solid salmon); 
+// }
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  height: 100vw;
+}
+
+.container {
   font-family: Verdana;
-  border-radius: 3px;
-  margin: 10px;
-  background-color: $background-color;
-  color: $color;
-  border: $border;
+  font-size: 1.2rem;
 }
 
-.error {
-  @include notifications($background-color: rgb(0, 255, 170), $color: white, $border: 1px solid white);
-}
+.page-wrapper {
+  padding: 21px;
 
+  .featured {
+  color: rgba(72, 0, 241, 0.42);
+  }
 
-.success {
-  @include notifications($background-color: rgb(17, 0, 255,), $color: mintcream, $border: 1px solid salmon); 
+  .page-content {
+  background-color: rgb(0, 34, 255);
+  padding: 42px;
+  color: #ffffff;
+  .container {
+      font-family: courier;
+    }
+  }
 }

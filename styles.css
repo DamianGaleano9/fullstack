@@ -1,27 +1,25 @@
-.error {
-  width: 99%;
-  height: 35px;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 1.2em;
-  font-family: Verdana;
-  border-radius: 3px;
-  margin: 10px;
-  background-color: rgb(0, 255, 170);
-  color: white;
-  border: 1px solid white;
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  height: 100vw;
 }
 
-.success {
-  width: 99%;
-  height: 35px;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 1.2em;
+.container {
   font-family: Verdana;
-  border-radius: 3px;
-  margin: 10px;
-  background-color: rgb(17, 0, 255);
-  color: mintcream;
-  border: 1px solid salmon;
+  font-size: 1.2rem;
+}
+
+.page-wrapper {
+  padding: 21px;
+}
+.page-wrapper .featured {
+  color: rgba(72, 0, 241, 0.42);
+}
+.page-wrapper .page-content {
+  background-color: rgb(0, 34, 255);
+  padding: 42px;
+  color: #ffffff;
+}
+.page-wrapper .page-content .container {
+  font-family: courier;
 }/*# sourceMappingURL=styles.css.map */

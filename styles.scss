@@ -13,10 +13,10 @@
 }
 
 .error {
-  @include notifications($background-color: rgb(0, 255, 170, $color: white, $border: 1px solid white));
+  @include notifications($background-color: rgb(0, 255, 170), $color: white, $border: 1px solid white);
 }
 
 
 .success {
-  @include notifications($background-color: rgb(17, 0, 255, $color: mintcream, $border: 1px solid salmon)); 
+  @include notifications($background-color: rgb(17, 0, 255,), $color: mintcream, $border: 1px solid salmon); 
 }

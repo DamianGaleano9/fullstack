@@ -21,8 +21,10 @@
 //   @include notifications($background-color: rgb(17, 0, 255,), $color: mintcream, $border: 1px solid salmon); 
 // }
 
+$white: #ffffff;
+
 body {
-  background-color: #ffffff;
+  background-color: $white;
   height: 100vh;
   height: 100vw;
 }
@@ -40,9 +42,9 @@ body {
   }
 
   .page-content {
-  background-color: rgb(0, 34, 255);
+  background-color: black;
   padding: 42px;
-  color: #ffffff;
+  color: $white;
   .container {
       font-family: courier;
     }

@@ -22,6 +22,7 @@
 // }
 
 $white: #ffffff;
+$master-site-color: green;
 
 body {
   background-color: $white;
@@ -38,11 +39,11 @@ body {
   padding: 21px;
 
   .featured {
-  color: rgba(72, 0, 241, 0.42);
+  color: $master-site-color;
   }
 
   .page-content {
-  background-color: black;
+  background-color: $master-site-color;
   padding: 42px;
   color: $white;
   .container {

@@ -13,10 +13,10 @@ body {
   padding: 21px;
 }
 .page-wrapper .featured {
-  color: rgba(72, 0, 241, 0.42);
+  color: green;
 }
 .page-wrapper .page-content {
-  background-color: black;
+  background-color: green;
   padding: 42px;
   color: #ffffff;
 }

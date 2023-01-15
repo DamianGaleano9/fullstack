@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #f6f6f6;
   height: 100vh;
   height: 100vw;
 }
@@ -18,7 +18,7 @@ body {
 .page-wrapper .page-content {
   background-color: green;
   padding: 42px;
-  color: #ffffff;
+  color: #f6f6f6;
 }
 .page-wrapper .page-content .container {
   font-family: courier;

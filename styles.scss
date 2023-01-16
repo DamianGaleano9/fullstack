@@ -22,7 +22,7 @@
 // }
 
 $off-white: #f6f6f6;
-$featured-color: green; // I can put the default and if the variable does not establish it, apply the style;
+$featured-color: rgb(255, 0, 149); // I can put the default and if the variable does not establish it, apply the style;
 
 @mixin heading-feature-styling {
   $featured-color: darkred !default; //Dinamyc variable create to set default values;
@@ -47,17 +47,27 @@ body {
   font-size: 1.2rem;
 }
 
-.page-wrapper {
+.page-wrapper {  //Nesting allows you to acces elements the same way from DOM;
   padding: 21px;
 
-  .featured {
+  .featured {  //Featured & page content are nested within page wrapper but the are no connected;
     @include heading-feature-styling;
+    .subheading a {
+      color: cornflowerblue;   
+      text-decoration: none;
+      & :hover {
+        color: black;
+        text-decoration: underline;
+      }
+    }
   }
 
   .page-content {
+
     @include section-feature-styling;
-  .container {
-      font-family: courier;
+    .container {
+    font-family: courier;
     }
   }
 }
+

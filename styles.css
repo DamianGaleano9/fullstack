@@ -13,10 +13,18 @@ body {
   padding: 21px;
 }
 .page-wrapper .featured {
-  color: green;
+  color: rgb(255, 0, 149);
+}
+.page-wrapper .featured .subheading a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+.page-wrapper .featured .subheading a :hover {
+  color: black;
+  text-decoration: underline;
 }
 .page-wrapper .page-content {
-  background-color: green;
+  background-color: rgb(255, 0, 149);
   padding: 42px;
   color: #f6f6f6;
 }

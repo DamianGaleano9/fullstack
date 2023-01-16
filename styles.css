@@ -13,21 +13,41 @@ body {
   padding: 21px;
 }
 .page-wrapper .featured {
-  color: rgb(255, 0, 149);
+  color: tomato;
 }
 .page-wrapper .featured .subheading a {
-  color: cornflowerblue;
+  color: lightsteelblue;
   text-decoration: none;
 }
 .page-wrapper .featured .subheading a :hover {
-  color: black;
+  color: lightskyblue;
   text-decoration: underline;
 }
 .page-wrapper .page-content {
-  background-color: rgb(255, 0, 149);
+  background-color: RoyalBlue;
   padding: 42px;
   color: #f6f6f6;
 }
 .page-wrapper .page-content .container {
+  height: 60px !important;
   font-family: courier;
+}
+.page-wrapper .page-content .container .description {
+  float: left;
+  width: 75%;
+}
+.page-wrapper .page-content .container .sidebar {
+  font-family: Verdana;
+  text-align: right;
+  float: right;
+  width: 25%;
+  color: tomato;
+}
+.page-wrapper .page-content .container .sidebar .subheading a {
+  color: lightsteelblue;
+  text-decoration: none;
+}
+.page-wrapper .page-content .container .sidebar .subheading a:hover {
+  color: LightSkyBlue;
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */

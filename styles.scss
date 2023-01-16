@@ -22,19 +22,19 @@
 // }
 
 $off-white: #f6f6f6;
-$featured-color: rgb(255, 0, 149); // I can put the default and if the variable does not establish it, apply the style;
+$featured-color: darkred; // I can put the default and if the variable does not establish it, apply the style;
 
-@mixin heading-feature-styling {
-  $featured-color: darkred !default; //Dinamyc variable create to set default values;
-  color: $featured-color;
-}
+// @mixin heading-feature-styling {
+//   $featured-color: darkred !default; //Dinamyc variable create to set default values;
+//   color: $featured-color;
+// }
 
-@mixin section-feature-styling {
-  $featured-color: darkred !default;
-  background-color: $featured-color;
-  padding: 42px;
-  color: $off-white;
-}
+// @mixin section-feature-styling {
+//   $featured-color: darkred !default;
+//   background-color: $featured-color;
+//   padding: 42px;
+//   color: $off-white;
+// }
 
 body {
   background-color: $off-white;
@@ -49,25 +49,54 @@ body {
 
 .page-wrapper {  //Nesting allows you to acces elements the same way from DOM;
   padding: 21px;
+  $featured-color: RoyalBlue;
 
-  .featured {  //Featured & page content are nested within page wrapper but the are no connected;
-    @include heading-feature-styling;
-    .subheading a {
-      color: cornflowerblue;   
-      text-decoration: none;
-      & :hover {
-        color: black;
-        text-decoration: underline;
+    .featured {  //Featured & page content are nested within page wrapper but the are no connected;
+      // @include heading-feature-styling;
+      color: tomato;
+      .subheading a {
+        color: lightsteelblue;   
+        text-decoration: none;
+        & :hover {
+          color: lightskyblue;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .page-content {
+
+      // @include section-feature-styling;
+      background-color: $featured-color;
+      padding: 42px;
+      color: $off-white;
+
+      .container {
+        height: 60px !important;
+        font-family: courier;
+      
+
+      .description {
+        float: left;
+        width: 75%;
+      }
+
+      .sidebar {
+        font-family: Verdana;
+        text-align: right;
+        float: right;
+        width: 25%;
+        color: tomato;
+        .subheading a {
+          color: lightsteelblue;
+          text-decoration: none;
+          &:hover {
+            color: LightSkyBlue;
+            text-decoration: underline;
+
+          }
+        }
       }
     }
   }
-
-  .page-content {
-
-    @include section-feature-styling;
-    .container {
-    font-family: courier;
-    }
-  }
 }
-

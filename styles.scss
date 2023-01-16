@@ -21,73 +21,73 @@
 //   @include notifications($background-color: rgb(17, 0, 255,), $color: mintcream, $border: 1px solid salmon); 
 // }
 
-$off-white: #f6f6f6;
-$featured-color: darkred; // I can put the default and if the variable does not establish it, apply the style;
+// $off-white: #f6f6f6;
+// $featured-color: darkred; // I can put the default and if the variable does not establish it, apply the style;
 
-@mixin featured($bg-color: 'dark'){
+// @mixin featured($bg-color: 'dark'){
 
-  @if $bg-color == 'light' {
-    color: tomato;
-  }@else if $bg-color == 'dark'{
-    color: greenyellow;
-  } @else {
-    color: rgb(255, 255, 255)
-  }
+//   @if $bg-color == 'light' {
+//     color: tomato;
+//   }@else if $bg-color == 'dark'{
+//     color: greenyellow;
+//   } @else {
+//     color: rgb(255, 255, 255)
+//   }
 
 
 
-  .subheading a {
-    color: black;   
-    text-decoration: none;
-    & :hover {
-      color: black;
-      text-decoration: underline;
-    }
-  }
-}
+//   .subheading a {
+//     color: black;   
+//     text-decoration: none;
+//     & :hover {
+//       color: black;
+//       text-decoration: underline;
+//     }
+//   }
+// }
 
-body {
-  background-color: $off-white;
-  height: 100vh;
-  height: 100vw;
-}
+// body {
+//   background-color: $off-white;
+//   height: 100vh;
+//   height: 100vw;
+// }
 
-.container {
-  font-family: Verdana;
-  font-size: 1.4rem;
-}
+// .container {
+//   font-family: Verdana;
+//   font-size: 1.4rem;
+// }
 
-.page-wrapper {  //Nesting allows you to acces elements the same way from DOM;
-  padding: 21px;
-  $featured-color: RoyalBlue;
+// .page-wrapper {  //Nesting allows you to acces elements the same way from DOM;
+//   padding: 21px;
+//   $featured-color: RoyalBlue;
 
-    .featured {  //Featured & page content are nested within page wrapper but the are no connected;
-      @include featured('light');
-    }
+//     .featured {  //Featured & page content are nested within page wrapper but the are no connected;
+//       @include featured('light');
+//     }
 
-    .page-content {
+//     .page-content {
 
-      background-color: $featured-color;
-      padding: 42px;
-      color: $off-white;
+//       background-color: $featured-color;
+//       padding: 42px;
+//       color: $off-white;
 
-      .container {
-        height: 60px !important;
-        font-family: courier;
+//       .container {
+//         height: 60px !important;
+//         font-family: courier;
       
 
-      .description {
-        float: left;
-        width: 75%;
-      }
+//       .description {
+//         float: left;
+//         width: 75%;
+//       }
 
-      .sidebar {
-        font-family: Verdana;
-        text-align: right;
-        float: right;
-        width: 25%;
-        @include featured('olive');
-      }
-    }
-  }
-}
+//       .sidebar {
+//         font-family: Verdana;
+//         text-align: right;
+//         float: right;
+//         width: 25%;
+//         @include featured('olive');
+//       }
+//     }
+//   }
+// }

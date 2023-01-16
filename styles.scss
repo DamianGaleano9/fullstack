@@ -24,17 +24,27 @@
 $off-white: #f6f6f6;
 $featured-color: darkred; // I can put the default and if the variable does not establish it, apply the style;
 
-// @mixin heading-feature-styling {
-//   $featured-color: darkred !default; //Dinamyc variable create to set default values;
-//   color: $featured-color;
-// }
+@mixin featured($bg-color: 'dark'){
 
-// @mixin section-feature-styling {
-//   $featured-color: darkred !default;
-//   background-color: $featured-color;
-//   padding: 42px;
-//   color: $off-white;
-// }
+  @if $bg-color == 'light' {
+    color: tomato;
+  }@else if $bg-color == 'dark'{
+    color: greenyellow;
+  } @else {
+    color: rgb(255, 255, 255)
+  }
+
+
+
+  .subheading a {
+    color: black;   
+    text-decoration: none;
+    & :hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+}
 
 body {
   background-color: $off-white;
@@ -44,7 +54,7 @@ body {
 
 .container {
   font-family: Verdana;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .page-wrapper {  //Nesting allows you to acces elements the same way from DOM;
@@ -52,21 +62,11 @@ body {
   $featured-color: RoyalBlue;
 
     .featured {  //Featured & page content are nested within page wrapper but the are no connected;
-      // @include heading-feature-styling;
-      color: tomato;
-      .subheading a {
-        color: lightsteelblue;   
-        text-decoration: none;
-        & :hover {
-          color: lightskyblue;
-          text-decoration: underline;
-        }
-      }
+      @include featured('light');
     }
 
     .page-content {
 
-      // @include section-feature-styling;
       background-color: $featured-color;
       padding: 42px;
       color: $off-white;
@@ -86,16 +86,7 @@ body {
         text-align: right;
         float: right;
         width: 25%;
-        color: tomato;
-        .subheading a {
-          color: lightsteelblue;
-          text-decoration: none;
-          &:hover {
-            color: LightSkyBlue;
-            text-decoration: underline;
-
-          }
-        }
+        @include featured('olive');
       }
     }
   }

@@ -2,9 +2,9 @@
   display: flex;
 }
 .container .item {
-  flex: 1;
   display: flex;
   justify-content: space-between;
+  flex: 1;
   border: 1px solid grey;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -14,8 +14,8 @@
 }
 .container .item .content .metadata {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  justify-content: column;
   margin-left: 20px;
 }
 .container .item .content .metadata .title {
@@ -26,12 +26,12 @@
   align-items: center;
 }
 .container .item .btn-group .button {
-  height: 100%;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 42px;
   justify-content: center;
+  justify-content: row;
+  align-items: center;
+  height: 100%;
+  width: 42px;
   font-size: 2em;
 }
 .container .item .btn-group .button a {

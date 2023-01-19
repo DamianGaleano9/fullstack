@@ -24,6 +24,42 @@ body {
     grid-gap: 20px;
   }
 
+  .style-details-text {
+    text-align: right;
+  }
+
+  .style-details-text div {
+    color: #808080;
+    font-weight: normal;
+  }
+
+  .style-details-text h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
   .style-details-logo img {
     width: 100%;
+  }
+
+
+  .dos_donts_wrapper {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 30px;
+  }
+
+
+  .dont_images_box img {
+    width: 50%;
+  }
+
+  .dont_images_box {
+    text-align: center;
+  }
+
+  .dos_dont_heading {
+    font-weight: 900;
   }
